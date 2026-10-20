@@ -1,13 +1,10 @@
 import { Children } from "react";
 
-export default function Panel({ children }){
+export default function Panel({judul, children }){
     return(
-        <>
-            {Children.map(children, child => 
-                <div>
-                    {child}
-                </div>
-            )}
-        </>
+        <div>
+            {judul ?? <h2>{judul}</h2>}
+            {children}
+        </div>
     )
 }

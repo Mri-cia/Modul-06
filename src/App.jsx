@@ -1,8 +1,8 @@
-import { useState } from "react";
-import heroImg from "./assets/hero.png";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "./assets/vite.svg";
+
 import "./App.css";
+import Panel from "./components/Panel";
+import KartuMenu from "./components/KartuMenu"
+
 
 function App() {
   const namaPanggilan = "Rawi";
@@ -25,6 +25,11 @@ function App() {
         <p>Saldo awal waktu kantin: Rp{N * 1000}</p>
         <button disabled={true}>bayar</button>
       </div>
+      <Panel judul={'Menu Hari ini'}>
+        <div>
+        <KartuMenu nama="Nasi Ayam Geprek" harga={13000}/>
+        </div>
+      </Panel>
     </>
   );
 }

@@ -1,4 +1,4 @@
-export default function LabelHarga(nilai){
+export default function LabelHarga({nilai}){
     return(
         <p>Rp {nilai}</p>
     )
